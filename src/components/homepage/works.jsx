@@ -1,6 +1,5 @@
 import React from "react";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import sevenImage from "./seven.jpg";
 
 import Card from "../common/card";
 
@@ -15,7 +14,11 @@ const Works = () => {
 				body={
 					<div className="works-body">
 						<div className="work">
-						<img src={sevenImage} alt="Seven/Eleven" className="work-image" />
+							<img
+								src="./seven.png"	
+								alt="Seven/Eleven"
+								className="work-image"
+							/>
 							<div className="work-title">7-11 Ballerup Station</div>
 							<div className="work-subtitle">
 								Sales Assistant
@@ -31,7 +34,7 @@ const Works = () => {
 							/>
 							<div className="work-title">Sailing-Group Føtex</div>
 							<div className="work-subtitle">
-								Software Engineer
+								Cashier
 							</div>
 							<div className="work-duration">Jan 2022 - July 2022</div>
 						</div>
