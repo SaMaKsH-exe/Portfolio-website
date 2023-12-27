@@ -72,9 +72,7 @@ const ReadArticle = () => {
 							</div>
 						</div>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
+			
 				</div>
 			</div>
 		</React.Fragment>

@@ -3,13 +3,14 @@ const INFO = {
 		title: "Samaksh Kaushik",
 		name: "Samaksh Kaushik",
 		email: "samaksh13kaushik@gmail.com",
-		logo: "../logo.png",
+		
 	},
 
 	socials: {
 		github: "https://github.com/SaMaKsH-exe",
 		linkedin: "https://www.linkedin.com/in/samaksh-kaushik/",
 		instagram: "https://www.instagram.com/samaksh.kaushik_/",
+		
 		
 		
 	},
@@ -28,32 +29,24 @@ const INFO = {
 		},
 
 	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+		title: "I'm passionate about various topics in STEM, and I write about them here",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+			"Chronological collection of my long-form thoughts on Physics, programming and things that fascinate me.",
 	},
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "Small Simulation of Solar system ",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 2",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"Using pygame library i have created small simulation of 4 planetsa around a star.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/SaMaKsH-exe/Planet-Simulation",
 		},
-
+		
+		
 		{
-			title: "Project 3",
+			title: "Project 2",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
@@ -62,7 +55,7 @@ const INFO = {
 		},
 
 		{
-			title: "Project 4",
+			title: "Project 3",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
@@ -71,7 +64,7 @@ const INFO = {
 		},
 
 		{
-			title: "Project 5",
+			title: "Project 4",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
