@@ -1,18 +1,22 @@
 .about-logo-container {
 	display: flex;
 	justify-content: left;
-	padding-top: 25px;
+	align-items: center;
+
 }
 
 .about-logo {
-	display: flex;
-	position: fixed;
-	border: 1px solid white;
-	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-	top: 4vh;
+    display: flex;
+    position: fixed;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    top: 4vh;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    height: 100px; /* Set a specific height */
+    padding-top: 0; /* Remove the top padding */
 }
-
 .about-container {
 	display: flex;
 	flex-direction: column;
@@ -23,6 +27,7 @@
 
 .about-main {
 	display: flex;
+	flex-direction: row;
 }
 
 .about-right-side {
