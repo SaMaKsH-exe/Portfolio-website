@@ -4,7 +4,7 @@
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	opacity: 0.9;
-	height: 300px; /* Fixed height for project cards */
+/* Fixed height for project cards */
 	height: auto;
   }
   
@@ -70,6 +70,7 @@
   }
   
   .project-card {
+
 	/* Increase the height */
 	height: auto; /* Adjust this value as needed */
   }

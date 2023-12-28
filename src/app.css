@@ -30,21 +30,18 @@ body.dark-mode {
 }
 
 /* Apply dark mode styles to the entire page */
+body.dark-mode .page-content {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .page-footer::before {
+  border-top: 2px solid #1e1e1e;
+}
+
+/* Dark mode styles */
 body.dark-mode {
   background-color: #121212;
   color: #ffffff;
-}
-
-body.dark-mode .page-content {
-  background-color: #1e1e1e;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjust box shadow for dark mode */
-}
-
-/* Dark mode styles for :before and :after */
-body.dark-mode .page-content:before,
-body.dark-mode .page-content:after {
-  background-color: #fafafa;
-  border: 1px solid #f4f4f5;
 }
 
 /* Rest of your existing styles */
@@ -68,6 +65,7 @@ body.dark-mode .page-content:after {
 
 .page-content {
   background-color: white;
+  position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for light mode */
 }
 
@@ -95,7 +93,6 @@ body.dark-mode .page-content:after {
 .content-wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px; /* Adjust padding for responsiveness */
 }
 
 .title {
@@ -115,6 +112,19 @@ body.dark-mode .page-content:after {
   margin-top: 25px;
 }
 
+.page-footer {
+  position: block;
+  margin-top: 30px; /* Add spacing above the footer */
+}
+
+.page-footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 2px solid var(--tertiary-color);
+}
+
 @media (max-width: 1270px) {
   .page-content:before,
   .page-content:after {
@@ -129,6 +139,11 @@ body.dark-mode .page-content:after {
 }
 
 @media (max-width: 1024px) {
+  .page-content:before,
+  .page-content:after {
+    width: calc((100% - 950px) / 2);
+  }
+
   .content-wrapper {
     max-width: 980px;
   }
@@ -146,8 +161,54 @@ body.dark-mode .page-content:after {
     display: none;
   }
 
-  .title,
+  .title {
+    width: 100%;
+  }
+
   .subtitle {
-    width: 100%; /* Adjust width for responsiveness */
+    width: 100%;
   }
 }
+
+/* App.css */
+
+/* Add this style to make the switch more visually appealing */
+.dark-mode-switch {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+  }
+  
+  /* Style for the MUI Switch component */
+  .MuiSwitch-root {
+	width: 48px;
+	height: 24px;
+	padding: 0;
+  }
+  
+  .MuiSwitch-switchBase {
+	padding: 4px;
+	color: white;
+  }
+  
+  .MuiSwitch-thumb {
+	width: 16px;
+	height: 16px;
+	background-color: #fff;
+  }
+  
+  .MuiSwitch-track {
+	background-color: #616161;
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+	background-color: #121212;
+	color: #ffffff;
+  }
+  
+  .dark-mode-switch {
+	color: #ffffff; /* Adjust the color for dark mode */
+  }
