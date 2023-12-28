@@ -51,7 +51,7 @@ const About = () => {
 									{INFO.about.description2}
 								</div>
 								<div className="subtitle about-subtitle">
-									{INFO.about.description3}
+									{INFO.about.description}
 								</div>
 							</div>
 
