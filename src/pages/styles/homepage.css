@@ -148,3 +148,45 @@
 		margin-right: -25px;
 	}
 }
+
+
+body.dark-mode .homepage-container {
+	background-color: #1e1e1e;
+	color: #ffffff;
+  }
+  
+  body.dark-mode .homepage-container .homepage-title,
+  body.dark-mode .homepage-container .homepage-subtitle {
+	color: #ffffff;
+  }
+  
+  body.dark-mode .homepage-container .homepage-image-container {
+	background-color: #1e1e1e;
+  }
+  
+  body.dark-mode .homepage-container .homepage-social-icon {
+	color: #ffffff;
+  }
+  
+  /* Additional dark mode styles for other elements in the .homepage-container */
+  
+  /* Media queries for responsiveness */
+  
+  /* Existing media queries for light mode */
+  
+  @media (max-width: 1024px) {
+	/* Add dark mode styles for responsive design */
+  }
+  
+  @media (max-width: 600px) {
+	.homepage-container {
+	  padding-top: 60px;
+	}
+  
+	.homepage-image-container {
+	  width: 80%;
+	}
+  }
+  
+  /* Import the global styles */
+  @import "../../data/styles.css";

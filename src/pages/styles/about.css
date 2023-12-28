@@ -5,18 +5,6 @@
 
 }
 
-.about-logo {
-    display: flex;
-    position: fixed;
-    border: 1px solid white;
-    border-radius: 50%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    top: 4vh;
-    justify-content: center; /* Horizontally center the text */
-    align-items: center; /* Vertically center the text */
-    height: 100px; /* Set a specific height */
-    padding-top: 0; /* Remove the top padding */
-}
 .about-container {
 	display: flex;
 	flex-direction: column;
@@ -120,3 +108,74 @@
 		width: 80%;
 	}
 }
+
+
+body.dark-mode .about-container {
+	background-color: #1e1e1e;
+	color: #ffffff;
+  }
+  
+  body.dark-mode .about-container .about-title,
+  body.dark-mode .about-container .about-subtitle {
+	color: #ffffff;
+  }
+  
+  body.dark-mode .about-container .about-image-container {
+	background-color: #1e1e1e;
+  }
+  
+  /* Additional dark mode styles for other elements in the .about-container */
+  
+  /* Media queries for responsiveness */
+  
+  /* Existing media queries for light mode */
+  
+  @media (max-width: 1024px) {
+	.about-logo {
+	  z-index: 100;
+	}
+  
+	.about-main {
+	  flex-direction: column;
+	}
+  
+	.about-subtitle {
+	  padding-top: 20px !important;
+	}
+  
+	.about-left-side {
+	  flex-basis: 100%;
+	  order: 1;
+	}
+  
+	.about-right-side {
+	  flex-basis: 100%;
+	  order: 2;
+	}
+  
+	.about-image-container {
+	  padding-bottom: 40px;
+	}
+  
+	.about-socials {
+	  display: none;
+	}
+  
+	.about-socials-mobile {
+	  padding-top: 30px;
+	  display: flex;
+	}
+  }
+  
+  @media (max-width: 600px) {
+	.about-container {
+	  padding-top: 60px;
+	}
+  
+	.about-image-container {
+	  width: 80%;
+	}
+  }
+  
+  /* Import the global styles */
+  @import "../../data/styles.css";

@@ -1,85 +1,121 @@
-@import "../../../data/styles.css";
+/* Add this style to your existing styles.css file */
 
 .project {
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	opacity: 0.9;
-	height: 100%;
+	height: 300px; /* Fixed height for project cards */
 	height: auto;
-}
-
-.project a {
+  }
+  
+  .project a {
 	text-decoration: none;
-
-}
-
-.project:hover {
+  }
+  
+  .project:hover {
 	background: #fafafa;
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
-}
-
-.project:hover .project-link {
+  }
+  
+  .project:hover .project-link {
 	color: var(--link-color);
 	transition: color 0.3s ease-in-out;
-}
-
-.project-container {
+  }
+  
+  .project-container {
 	padding: 32px;
 	height: 100%;
-}
-
-.project-logo {
+  }
+  
+  .project-logo {
 	width: 30px;
 	height: 30px;
-}
-
-.project-logo img {
+  }
+  
+  .project-logo img {
 	width: 100%;
 	height: 100%;
-}
-
-.project-title {
+  }
+  
+  .project-title {
 	font-family: var(--secondary-font);
 	color: var(--primary-color);
 	font-size: 16px;
 	padding-top: 15px;
 	margin-bottom: 1em;
-	
-}
-
-.project-description {
+  }
+  
+  .project-description {
 	color: var(--secondary-color);
 	font-size: 12px;
-}
-
-.project-link {
+  }
+  
+  .project-link {
 	display: flex;
 	align-items: center;
 	color: var(--secondary-color);
 	font-size: 12px;
 	padding-top: 20px;
-}
-
-.project-link-icon {
+  }
+  
+  .project-link-icon {
 	padding-left: 5px;
 	font-size: 13px;
-}
-
-.project-link-text {
+  }
+  
+  .project-link-text {
 	padding-left: 20px;
 	font-weight: 700;
-}
-
-.project-card {
-    /* Increase the height */
-    height: auto; /* Adjust this value as needed */
-
+  }
   
-}
-
-@media (max-width: 600px) {
-	.project {
-		height: 300px;
+  .project-card {
+	/* Increase the height */
+	height: auto; /* Adjust this value as needed */
+  }
+  
+  /* Dark Mode Styles for Project */
+  body.dark-mode .project {
+	background-color: #121212; /* Change to your dark mode background color */
+	color: #fff; /* Change to your dark mode text color */
+	box-shadow: none; /* Remove shadow */
+	border-radius: 0; /* Remove border-radius */
+  }
+  
+  body.dark-mode .project:hover {
+	background: #1e1e1e; /* Change to your dark mode hover background color */
+  }
+  
+  body.dark-mode .project:hover .project-link {
+	color: #fff; /* Change to your dark mode link color */
+  }
+  
+  /* Dark Mode Styles for Project Container */
+  body.dark-mode .project-container {
+	background-color: #121212; /* Change to your dark mode container background color */
+  }
+  
+  body.dark-mode .project-title {
+	color: #fff !important; /* Change to your dark mode title color */
+  }
+  
+  body.dark-mode .project-description {
+	color: #ccc !important; /* Change to your dark mode description color */
+  }
+  
+  body.dark-mode .project-link {
+	color: #ccc !important; /* Change to your dark mode link color */
+  }
+  
+  /* Dark Mode Styles for Project Card */
+  body.dark-mode .project-card {
+	border: none; /* Remove border */
+  }
+  
+  /* Dark Mode Styles for Mobile */
+  @media (max-width: 600px) {
+	body.dark-mode .project {
+	  height: 300px;
 	}
-}
+  }
+  

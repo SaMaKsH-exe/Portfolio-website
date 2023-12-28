@@ -1,33 +1,56 @@
+/* Add this style to your existing styles.css file */
+
 .projects-logo-container {
 	display: flex;
 	justify-content: left;
 	padding-top: 25px;
-}
-
-.projects-logo {
+  }
+  
+  .projects-logo {
 	display: flex;
 	position: fixed;
-	border: 1px solid white;
+	border: 1px solid #fff; /* White border */
 	border-radius: 50%;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 	top: 4vh;
 	z-index: 999;
-}
-
-.projects-container {
+	background-color: #000; /* Black background */
+	color: #fff; /* White text color */
+  }
+  
+  .projects-container {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	margin: 0;
 	padding-top: 120px;
-}
-
-@media (max-width: 600px) {
+  }
+  
+  body.dark-mode .projects-container {
+	background-color: transparent; /* Set to transparent to remove the background color */
+	color: #fff;
+  }
+	 /* White text color in dark mode */
+  
+  
+  /* Dark Mode Styles */
+  body.dark-mode .projects-logo {
+	color: #fff; /* White text color in dark mode */
+  }
+  
+  /* Dark Mode Styles for Title and Subtitle */
+  body.dark-mode .projects-title,
+  body.dark-mode .projects-subtitle {
+	color: #fff !important; /* White text color in dark mode */
+  }
+  
+  @media (max-width: 600px) {
 	.projects-container {
-		padding-top: 60px;
+	  padding-top: 60px;
 	}
-
+  
 	.projects-project {
-		width: calc(100% / 2);
+	  width: calc(100% / 2);
 	}
-}
+  }
+  

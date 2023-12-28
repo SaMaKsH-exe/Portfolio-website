@@ -34,3 +34,19 @@
 .email-wrapper {
 	padding-top: 20px;
 }
+
+/* Add this style to your existing styles.css file */
+
+/* Dark Mode Styles for Social and Email */
+body.dark-mode .social-icon {
+	color: #fff; /* Change to your dark mode color */
+  }
+  
+  body.dark-mode .social-text {
+	color: #fff; /* Change to your dark mode color */
+  }
+  
+  body.dark-mode .email::before {
+	border-top-color: #4d4d4d; /* Change to your dark mode color */
+  }
+  

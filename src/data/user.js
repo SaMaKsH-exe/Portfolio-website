@@ -50,7 +50,7 @@ const INFO = {
 		{
 			title: "Image editor",
 			description:
-				"I have created a basic image editor where, you can rotate, monocrome, and save the picture.",
+				"I have created a basic image editor where, you can rotate, monochrome, and save the picture.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
 			linkText: "View Project on Github",
 			link: "https://github.com/SaMaKsH-exe/Imageeditor",
