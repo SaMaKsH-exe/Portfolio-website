@@ -40,7 +40,7 @@ const INFO = {
 		{
 			title: "Small Simulation of Solar system ",
 			description:
-				"Using pygame library i have created small simulation of 4 planetsa around a star.",
+				"Using pygame library i have created small simulation of 4 planets around a star.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
 			link: "https://github.com/SaMaKsH-exe/Planet-Simulation",
