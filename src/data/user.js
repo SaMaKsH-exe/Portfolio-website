@@ -17,7 +17,7 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Physics Student at Copenhagen University, with a passion in computer science",
+		title: "Physics Student at Copenhagen University, aspiring to be a STEM professional",
 		description:
 			"As a physics student at the University of Copenhagen (UCPH), I am passionate about exploring various disciplines within the STEM realm and understanding the inner workings of various phenomena. I am pursuing my bachelor's degree in physics, which challenges me to learn new concepts and skills every day.",
 	},
@@ -42,18 +42,18 @@ const INFO = {
 			description:
 				"Using pygame library i have created small simulation of 4 planets around a star.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			linkText: "View Project",
+			linkText: "View Project on Github",
 			link: "https://github.com/SaMaKsH-exe/Planet-Simulation",
 		},
 		
 		
 		{
-			title: "Project 2",
+			title: "Image editor",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			linkText: "View Project",
-			link: "https://github.com",
+				" using swing library in java.I have created a basic image editor where, you can rotate, monocrome, and save the picture.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
+			linkText: "View Project on Github",
+			link: "https://github.com/SaMaKsH-exe/Imageeditor",
 		},
 
 		{
