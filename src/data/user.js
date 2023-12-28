@@ -10,6 +10,7 @@ const INFO = {
 		github: "https://github.com/SaMaKsH-exe",
 		linkedin: "https://www.linkedin.com/in/samaksh-kaushik/",
 		instagram: "https://www.instagram.com/samaksh.kaushik_/",
+		medium: "https://medium.com/@samaksh13kaushik",
 		
 		
 		
@@ -23,7 +24,7 @@ const INFO = {
 
 	about: {
 		title: "Samaksh Kaushik, Aspiring STEM professional",
-		description1: "As a Physics undergraduate at the University of Copenhagen, I am deeply immersed in the exploration of STEM disciplines. My academic journey is characterized by a rigorous engagement with physics, where each day presents an opportunity to unravel new concepts and theories. My technical acumen extends to proficiency in Python, a versatile programming language that has found extensive application in my academic projects. I have leveraged Python for a range of tasks, from simulating physical systems to data analysis and creating intricate visualizations. I am committed to further refining these skills and acquainting myself with other relevant technologies that can augment my research capabilities.",
+		description1: " As a Physics undergraduate at the University of Copenhagen, I am engaged in STEM exploration. My studies in physics and proficiency in Python have equipped me with the skills to simulate physical systems, analyze data, and create visualizations. In addition to my academic pursuits, I actively apply my knowledge to practical scenarios. This hands-on approach has enriched my understanding of physics and programming. I am committed to refining these skills to enhance my research capabilities and continue pushing the boundaries of my knowledge and skills.",
 		description2: "Parallel to my academic pursuits, I have also gained practical experience as a Sales Assistant at 7-Eleven. This role has honed my communication and problem-solving skills and has instilled in me a strong work ethic and adaptability. Previously, I worked as a Service Assistant at føtex and Netto, two retail chains under the Salling Group. These experiences have exposed me to different work environments and challenges, enhancing my versatility and resilience.	",
 		description3: "Driven by a desire to make significant contributions to the STEM community, I am motivated to continuously expand my knowledge base, sharpen my skills, and foster connections with professionals in the field. My journey is guided by a commitment to professional growth and a passion for impactful learning. I believe that my passion, dedication, and curiosity are valuable assets that can drive innovation and contribute to the success of any team.",
 

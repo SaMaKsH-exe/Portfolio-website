@@ -5,6 +5,7 @@ import {
   faGithub,
   faLinkedin,
   faInstagram,
+  faMedium,
 } from "@fortawesome/free-brands-svg-icons";
 
 import INFO from "../../data/user";
@@ -41,14 +42,24 @@ const Socials = () => {
         </a>
       </div>
 
+      <div className="social">
+        <a href={INFO.socials.medium} target="_blank" rel="noreferrer">
+          <div className="social-icon">
+            <FontAwesomeIcon icon={faMedium} className="social-icon" />
+          </div>
+          <div className="social-text">Read my blogs</div>
+        </a>
+      </div>
+
+
       <div className="email">
         <div className="email-wrapper">
           <a href={`mailto:${INFO.main.email}`} target="_blank" rel="noreferrer">
             <div className="social-icon">
               <FontAwesomeIcon icon={faEnvelope} />
             </div>
-
             <div className="social-text">{INFO.main.email}</div>
+
           </a>
         </div>
       </div>

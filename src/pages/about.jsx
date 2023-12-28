@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
-import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
 
@@ -51,8 +50,14 @@ const About = () => {
 									{INFO.about.description2}
 								</div>
 								<div className="subtitle about-subtitle">
-									{INFO.about.description}
+									{INFO.about.description3}
+									<p style={{ paddingBottom: '20px' }}>
+  
+</p>
 								</div>
+							</div>
+							<div>
+
 							</div>
 
 							<div className="about-left-side">
