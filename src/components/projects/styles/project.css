@@ -3,7 +3,7 @@
 .project {
 	mix-blend-mode: normal;
 	border-radius: 20px;
-	opacity: 0.8;
+	opacity: 0.9;
 	height: 100%;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .project-container {
-	padding: 30px;
+	padding: 32px;
 }
 
 .project-logo {
@@ -63,6 +63,13 @@
 .project-link-text {
 	padding-left: 20px;
 	font-weight: 700;
+}
+
+.project-card {
+    /* Increase the height */
+    height: auto; /* Adjust this value as needed */
+
+  
 }
 
 @media (max-width: 600px) {
