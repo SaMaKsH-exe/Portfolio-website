@@ -1,31 +1,33 @@
-@import "../../../data/styles.css";
+/* Add these styles to your existing styles.css file */
 
 .nav-container {
 	margin: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.navbar {
+  }
+  
+  .navbar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: fixed;
 	top: 3vh;
 	z-index: 999;
-}
-
-.nav-background {
-    width: 250px; /* Adjust this value as needed */
-    height: 40px;
-    padding-left: 0%;
-    padding-right: 0%;
-    background: #fff;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 40px;
-}
-.nav-list {
+  }
+  
+  .nav-background {
+	width: 250px; /* Adjust this value as needed */
+	height: 40px;
+	padding-left: 0%;
+	padding-right: 0%;
+	background: #fff;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 40px;
+	transition: background-color 0.3s ease-in-out; /* Add transition effect */
+  }
+  
+  .nav-list {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
@@ -33,77 +35,62 @@
 	margin-left: -16px;
 	margin-right: 20px;
 	margin-top: 11px;
-}
-
-.nav-item {
+  }
+  
+  .nav-item {
 	font-weight: bold;
 	font-size: 80%;
-}
-
-.nav-item.active a {
-	color: var(--link-color) !important;
-}
-
-.nav-item a {
+  }
+  
+  .nav-item.active a {
+	color: #2196F3 !important; /* Blue color for active item */
+	background-color: rgba(33, 150, 243, 0.2); /* Blue background with 20% opacity */
+	border-radius: 20px; /* Add border-radius */
+	padding: 8px 16px; /* Add padding to enhance the visual */
+  }
+  
+  .nav-item a {
 	text-decoration: none;
 	color: var(--primary-color);
-}
-
-.nav-item a:hover {
+	transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-item a:hover {
 	color: var(--link-color);
 	transition: color 0.3s ease-in-out;
-}
-
-@media (max-width: 600px) {
-	.navbar {
-		margin-left: 25%;
-		margin-right: 25%;
-		width: 80%;
-		font-size: 80%;
-	}
-
-	.nav-background {
-		width: 80%;
-		height: 40px;
-	}
-
-	.nav-item {
-		font-weight: bold;
-	}
-}
-
-
-/* Add this style to your existing styles.css file */
-
-/* Dark Mode Switch */
-.dark-mode-switch {
-	display: flex;
-	align-items: center;
-	margin-left: 10px; /* Adjust the spacing as needed */
   }
   
-  .dark-mode-switch span {
-	margin-right: 8px;
-	font-size: 14px; /* Adjust the font size as needed */
+  /* Dark Mode Styles for NavBar */
+  body.dark-mode .navbar {
+	background-color: #1e1e1e; /* Change to your dark mode background color */
   }
   
-  .dark-mode-switch .react-switch-bg {
-	background-color: #fff; /* Light mode background color */
+  body.dark-mode .nav-background {
+	background: #1e1e1e; /* Change to your dark mode background color */
+	box-shadow: none; /* Remove box shadow */
+	border-radius: 40px; /* Keep the border-radius */
+	transition: background-color 0.3s ease-in-out; /* Add transition effect */
   }
   
-  .dark-mode-switch .react-switch-handle {
-	background-color: #000; /* Dark mode handle color */
+  body.dark-mode .nav-item.active a {
+	color: #2196F3 !important; /* Blue color for active item in dark mode */
+	background-color: rgba(33, 150, 243, 0.2); /* Blue background with 20% opacity in dark mode */
   }
   
-  .dark-mode-switch .react-switch-mark {
-	background-color: #aaa; /* Color of the mark when switch is off */
+  body.dark-mode .nav-item a {
+	color: #fff; /* Change to your dark mode text color */
   }
   
-  /* Add this class to adjust the position of the switch on smaller screens */
-  @media (max-width: 600px) {
-	.dark-mode-switch {
-	  margin-left: auto;
-	  margin-right: 10px; /* Adjust the spacing as needed */
-	}
+  body.dark-mode .nav-item a:hover {
+	color: #aaa; /* Change to your dark mode link color on hover */
+	transition: color 0.3s ease-in-out;
+  }
+  
+  /* Dark Mode Switch Styles */
+  .dark-mode-switch {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 1001; /* Ensure the switch is above the navbar */
   }
   

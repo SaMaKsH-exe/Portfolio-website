@@ -19,24 +19,21 @@ function App() {
   });
 
   const toggleDarkMode = () => {
-    setDarkMode((prevMode) => !prevMode);
-    const body = document.body;
-
-    // Toggle dark mode class on the body element
-    if (darkMode) {
-      body.classList.remove("dark-mode");
-    } else {
-      body.classList.add("dark-mode");
-    }
+	// Update the state based on the previous state
+	setDarkMode((prevMode) => !prevMode);
+  
+	// Add/remove the 'dark-mode' class on the body element
+	const body = document.body;
+	body.classList.toggle("dark-mode");
   };
-
+  
   return (
     <ThemeProvider theme={theme}>
       <div className={`App ${darkMode ? "dark-mode" : ""}`}>
-        <div className="dark-mode-switch">
+        <div className="dark-mode-switch" onClick={toggleDarkMode}>
           <Switch
             checked={darkMode}
-            onChange={toggleDarkMode}
+            onChange={() => {}} // Handle onChange in the switch itself
             name="darkModeSwitch"
           />
         </div>
@@ -44,15 +41,15 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Homepage darkMode={darkMode} />} // Pass darkMode as a prop
+            element={<Homepage darkMode={darkMode} />}
           />
           <Route
             path="/about"
-            element={<About darkMode={darkMode} />} // Pass darkMode as a prop
+            element={<About darkMode={darkMode} />}
           />
           <Route
             path="/projects"
-            element={<Projects darkMode={darkMode} />} // Pass darkMode as a prop
+            element={<Projects darkMode={darkMode} />}
           />
           <Route path="*" element={<Notfound />} />
         </Routes>

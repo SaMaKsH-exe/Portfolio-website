@@ -2,7 +2,6 @@
 	import { Helmet } from "react-helmet";
 
 	import NavBar from "../components/common/navBar";
-	import Logo from "../components/common/logo";
 	import AllProjects from "../components/projects/allProjects";
 
 	import INFO from "../data/user";
@@ -32,7 +31,6 @@
 					<NavBar active="projects" />
 					<div className="content-wrapper">
 						<div className="projects-logo-container">
-							
 						</div>
 						<div className="projects-container">
 							<div className="title projects-title">
