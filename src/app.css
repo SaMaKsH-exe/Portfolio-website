@@ -2,30 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=YourSecondaryFont&display=swap');
 
-body {
-  background-color: #ffffff;
-  color: #333; /* Adjust text color for light mode */
-  transition: background-color 0.5s, color 0.5s; /* Optional: add smooth transition */
-}
-
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-.dark-mode-switch {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  cursor: pointer;
-  font-size: 16px;
-  z-index: 1000; /* Adjust the z-index to bring the switch in front */
-}
-
-.dark-mode-switch span {
+an {
   margin-right: 8px;
 }
 
@@ -173,13 +150,18 @@ body.dark-mode {
 /* App.css */
 
 /* Add this style to make the switch more visually appealing */
-.dark-mode-switch {
-	display: flex;
-	align-items: center;
-	position: fixed;
-	top: 20px;
-	right: 20px;
-  }
+dark-mode-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000; /* Adjust the z-index to bring the switch in front */
+}
+
   
   /* Style for the MUI Switch component */
   .MuiSwitch-root {

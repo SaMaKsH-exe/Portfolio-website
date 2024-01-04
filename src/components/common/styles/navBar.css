@@ -63,6 +63,7 @@
   /* Dark Mode Styles for NavBar */
   body.dark-mode .navbar {
 	background-color: #1e1e1e; /* Change to your dark mode background color */
+	border-radius: 40px; /* Keep the border-radius */
   }
   
   body.dark-mode .nav-background {
