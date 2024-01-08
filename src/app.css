@@ -2,9 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=YourSecondaryFont&display=swap');
 
-an {
-  margin-right: 8px;
-}
 
 /* Apply dark mode styles to the entire page */
 body.dark-mode .page-content {
@@ -151,7 +148,7 @@ body.dark-mode {
 
 /* Add this style to make the switch more visually appealing */
 dark-mode-switch {
-  position: fixed;
+  position: relative;
   top: 20px;
   right: 20px;
   display: flex;

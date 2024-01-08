@@ -57,22 +57,15 @@ const INFO = {
 		},
 
 		{
-			title: "Project 3",
+			title: "Riggeed Spinwheel",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt  ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"Fun little project, using p5.js, where the odds are rigged.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/SaMaKsH-exe/Riggedspinthewheel",
 		},
 
-		{
-			title: "Project 4",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt  ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
+	
 	],
 };
 
