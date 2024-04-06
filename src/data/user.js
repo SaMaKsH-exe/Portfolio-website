@@ -57,12 +57,21 @@ const INFO = {
 		},
 
 		{
-			title: "Riggeed Spinwheel",
+			title: "Fractals Visualizer",
 			description:
-				"Fun little project, using p5.js, where the odds are rigged.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"Fun little project, to generate fractals, made in python and hosted on streamlit",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com/SaMaKsH-exe/Riggedspinthewheel",
+			link: "https://github.com/SaMaKsH-exe/Fractals-visvualizer",
+		},
+
+		{
+			title: "Game of Life ",
+			description:
+				"Game of life built in pygame .",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			linkText: "View Project on Github",
+			link: "https://github.com/SaMaKsH-exe/Game-of-life",
 		},
 
 	
