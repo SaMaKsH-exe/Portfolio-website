@@ -30,17 +30,12 @@ const INFO = {
 
 	},
 
-	articles: {
-		title: "I'm passionate about various topics in STEM, and I write about them here",
-		description:
-			"Chronological collection of my long-form thoughts on Physics, programming and things that fascinate me.",
-	},
 
 	projects: [
 		{
 			title: "Small Simulation of Solar system ",
 			description:
-				"Using pygame library i have created small simulation of 4 planets around a star.",
+				"Small simulation of 4 planets around a star using pygame.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project on Github",
 			link: "https://github.com/SaMaKsH-exe/Planet-Simulation",
@@ -50,7 +45,7 @@ const INFO = {
 		{
 			title: "Image editor",
 			description:
-				"I have created a basic image editor where, you can rotate, monochrome, and save the picture.",
+				"Basic image editor where you can rotate, monochrome, and save the picture.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
 			linkText: "View Project on Github",
 			link: "https://github.com/SaMaKsH-exe/Imageeditor",
@@ -68,7 +63,7 @@ const INFO = {
 		{
 			title: "Game of Life ",
 			description:
-				"Game of life built in pygame .",
+				"Game of life built using pygame .",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project on Github",
 			link: "https://github.com/SaMaKsH-exe/Game-of-life",
