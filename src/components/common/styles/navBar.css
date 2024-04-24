@@ -1,6 +1,7 @@
 /* Add these styles to your existing styles.css file */
 
 .nav-container {
+	color: #000;
 	margin: 0;
 	display: flex;
 	justify-content: center;
@@ -8,6 +9,7 @@
   }
   
   .navbar {
+	color: #000;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -28,6 +30,7 @@
   }
   
   .nav-list {
+	color: #000;
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
@@ -38,20 +41,21 @@
   }
   
   .nav-item {
+	color: #000000;
 	font-weight: bold;
 	font-size: 80%;
   }
   
   .nav-item.active a {
-	color: #2196F3 !important; /* Blue color for active item */
+	color: #000000 !important; /* Blue color for active item */
 	background-color: rgba(33, 150, 243, 0.2); /* Blue background with 20% opacity */
 	border-radius: 20px; /* Add border-radius */
 	padding: 8px 16px; /* Add padding to enhance the visual */
   }
   
   .nav-item a {
+	color: #000;
 	text-decoration: none;
-	color: var(--primary-color);
 	transition: color 0.3s ease-in-out;
   }
   
@@ -83,7 +87,7 @@
   }
   
   body.dark-mode .nav-item a:hover {
-	color: #aaa; /* Change to your dark mode link color on hover */
+	color: #aaa; 
 	transition: color 0.3s ease-in-out;
   }
   
@@ -92,6 +96,6 @@
 	position: fixed;
 	top: 20px;
 	right: 20px;
-	z-index: 1001; /* Ensure the switch is above the navbar */
+	z-index: 1001; 
   }
   

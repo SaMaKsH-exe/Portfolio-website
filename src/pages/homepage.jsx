@@ -5,8 +5,8 @@ import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
-  faInstagram,
-  faLinkedin
+  faLinkedin,
+  faMedium
 } from "@fortawesome/free-brands-svg-icons";
 
 
@@ -135,7 +135,20 @@ const Homepage = () => {
                   className="homepage-social-icon"
                 />
               </a>
-            </div>
+           
+  
+              <a
+                href={INFO.socials.medium}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faMedium}
+                  className="homepage-social-icon"
+                />
+              </a>
+            
+              </div>
 
             <div className="homepage-projects">
               <AllProjects />

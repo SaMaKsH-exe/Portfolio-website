@@ -13,7 +13,11 @@
 	padding-top: 120px;
 }
 
+.about-title {
+	color: #000;
+}
 .about-main {
+	color: #000;
 	display: flex;
 	flex-direction: row;
 }
@@ -124,11 +128,7 @@ body.dark-mode .about-container {
 	background-color: #1e1e1e;
   }
   
-  /* Additional dark mode styles for other elements in the .about-container */
-  
-  /* Media queries for responsiveness */
-  
-  /* Existing media queries for light mode */
+
   
   @media (max-width: 1024px) {
 	.about-logo {
