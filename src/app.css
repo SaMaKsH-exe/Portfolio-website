@@ -2,7 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=YourSecondaryFont&display=swap');
 
-
+/* fix the hight and width to cover the whole screen */
+html, body {
+  height: 100%;
+  width: 100%;
+}
 /* Apply dark mode styles to the entire page */
 body.dark-mode .page-content {
   background-color: #1e1e1e;
