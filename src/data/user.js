@@ -35,7 +35,7 @@ const INFO = {
 		{
 			title: "Small Simulation of Solar system ",
 			description:
-				"Small simulation of 4 planets around a star using pygame.",
+				"Small simulation of 4 planets around a star built using pygame.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project on Github",
 			link: "https://github.com/SaMaKsH-exe/Planet-Simulation",
@@ -45,7 +45,7 @@ const INFO = {
 		{
 			title: "Image editor",
 			description:
-				"Basic image editor where you can rotate, monochrome, and save the picture.",
+				"Basic image editor to upload,rotate, monochrome, and save the picture.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
 			linkText: "View Project on Github",
 			link: "https://github.com/SaMaKsH-exe/Imageeditor",
@@ -54,7 +54,7 @@ const INFO = {
 		{
 			title: "Fractals Visualizer",
 			description:
-				"Fun little project, to generate fractals, made in python and hosted on streamlit",
+				"Fun little project, to generate fractals, hosted on streamlit",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
 			link: "https://github.com/SaMaKsH-exe/Fractals-visvualizer",

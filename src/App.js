@@ -11,7 +11,7 @@ import "./app.css";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const location = useLocation();
+  
 
   const theme = createTheme({
     palette: {
@@ -20,42 +20,62 @@ function App() {
   });
 
   const toggleDarkMode = () => {
+    // Update the state based on the previous state
     setDarkMode((prevMode) => !prevMode);
+
+    // Add/remove the 'dark-mode' class on the body element
     const body = document.body;
     body.classList.toggle("dark-mode");
-  };
-  
-  // Function to determine whether to show the switch or not based on the route
-  const showSwitch = () => {
-    const { pathname } = location;
-    return !pathname.includes("/404");
   };
 
   return (
     <ThemeProvider theme={theme}>
       <div className={`App ${darkMode ? "dark-mode" : ""}`}>
         <Routes>
-          <Route path="/" element={<Homepage darkMode={darkMode} />} />
-          <Route path="/about" element={<About darkMode={darkMode} />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <DarkModeSwitch darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+                <Homepage darkMode={darkMode} />
+              </>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <>
+                <DarkModeSwitch darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+                <About darkMode={darkMode} />
+              </>
+            }
+          />
           <Route
             path="/projects"
-            element={<Projects darkMode={darkMode} />}
+            element={
+              <>
+                <DarkModeSwitch darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+                <Projects darkMode={darkMode} />
+              </>
+            }
           />
-          <Route path="/404" element={<Notfound />} />
+          <Route path="*" element={<Notfound />} />
         </Routes>
-        {/* Render the switch outside the Routes component */}
-        {showSwitch() && (
-          <div className="dark-mode-switch" onClick={toggleDarkMode}>
-            <Switch
-              checked={darkMode}
-              onChange={() => {}}
-              name="darkModeSwitch"
-            />
-          </div>
-        )}
       </div>
     </ThemeProvider>
   );
 }
+
+const DarkModeSwitch = ({ darkMode, toggleDarkMode }) => {
+  return (
+    <div className="dark-mode-switch" onClick={toggleDarkMode}>
+      <Switch
+        checked={darkMode}
+        onChange={() => {}} // Handle onChange in the switch itself
+        name="darkModeSwitch"
+      />
+    </div>
+  );
+};
 
 export default App;

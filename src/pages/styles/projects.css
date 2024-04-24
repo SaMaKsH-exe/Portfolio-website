@@ -1,11 +1,59 @@
 /* Add this style to your existing styles.css file */
+.title {
+    font-size: 45px;
+    font-weight: 700;
+    width: 70%;
+    color: black;
 
+}
 .projects-logo-container {
 	display: flex;
 	justify-content: left;
 	padding-top: 25px;
   }
   
+.projects-title {
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+  }
+  
+.projects-subtitle {
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin-bottom: 1rem;
+  }
+  
+.projects-project {
+	width: calc(50% - 20px);
+	margin: 10px;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+  }
+  
+.projects-project img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+  }
+  
+.projects-project .project-title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	font-size: 1.2rem;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
   .projects-logo {
 	display: flex;
 	position: fixed;
@@ -30,7 +78,7 @@
 	background-color: transparent; /* Set to transparent to remove the background color */
 	color: #fff;
   }
-	 /* White text color in dark mode */
+
   
   
   /* Dark Mode Styles */
